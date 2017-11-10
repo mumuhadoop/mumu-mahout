@@ -1,0 +1,132 @@
+2017-11-07 14:36:47,261 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:187] - Creating FileDataModel for file E:\IntelliJWorkspaceMumu\mumu-mahout\target\classes\datafile\item.csv
+2017-11-07 14:36:47,306 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:358] - Reading file info...
+2017-11-07 14:36:47,310 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:369] - Read lines: 21
+2017-11-07 14:36:47,323 INFO[org.apache.mahout.cf.taste.impl.model.GenericDataModel:113] - Processed 5 users
+2017-11-07 14:40:13,112 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:187] - Creating FileDataModel for file E:\IntelliJWorkspaceMumu\mumu-mahout\target\classes\datafile\item.csv
+2017-11-07 14:40:13,150 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:358] - Reading file info...
+2017-11-07 14:40:13,156 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:369] - Read lines: 21
+2017-11-07 14:40:13,167 INFO[org.apache.mahout.cf.taste.impl.model.GenericDataModel:113] - Processed 5 users
+2017-11-07 15:34:08,729 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:187] - Creating FileDataModel for file E:\IntelliJWorkspaceMumu\mumu-mahout\target\classes\datafile\item.csv
+2017-11-07 15:34:08,776 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:358] - Reading file info...
+2017-11-07 15:34:08,776 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:369] - Read lines: 21
+2017-11-07 15:34:08,791 INFO[org.apache.mahout.cf.taste.impl.model.GenericDataModel:113] - Processed 5 users
+2017-11-07 15:36:16,166 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:187] - Creating FileDataModel for file E:\IntelliJWorkspaceMumu\mumu-mahout\target\classes\datafile\item.csv
+2017-11-07 15:36:16,213 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:358] - Reading file info...
+2017-11-07 15:36:16,213 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:369] - Read lines: 21
+2017-11-07 15:36:16,228 INFO[org.apache.mahout.cf.taste.impl.model.GenericDataModel:113] - Processed 5 users
+2017-11-07 15:39:07,702 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:187] - Creating FileDataModel for file E:\IntelliJWorkspaceMumu\mumu-mahout\target\classes\datafile\item.csv
+2017-11-07 15:39:07,748 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:358] - Reading file info...
+2017-11-07 15:39:07,748 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:369] - Read lines: 21
+2017-11-07 15:39:07,764 INFO[org.apache.mahout.cf.taste.impl.model.GenericDataModel:113] - Processed 5 users
+2017-11-07 15:49:37,482 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:187] - Creating FileDataModel for file E:\IntelliJWorkspaceMumu\mumu-mahout\target\classes\datafile\item.csv
+2017-11-07 15:49:37,514 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:358] - Reading file info...
+2017-11-07 15:49:37,514 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:369] - Read lines: 21
+2017-11-07 15:49:37,529 INFO[org.apache.mahout.cf.taste.impl.model.GenericDataModel:113] - Processed 5 users
+2017-11-07 15:49:37,545 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:106] - Beginning evaluation using 0.7 of FileDataModel[dataFile:E:\IntelliJWorkspaceMumu\mumu-mahout\target\classes\datafile\item.csv]
+2017-11-07 15:49:37,545 INFO[org.apache.mahout.cf.taste.impl.model.GenericDataModel:113] - Processed 5 users
+2017-11-07 15:49:37,545 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:182] - Beginning evaluation of 5 users
+2017-11-07 15:49:37,560 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:195] - Starting timing of 5 tasks in 4 threads
+2017-11-07 15:49:37,560 INFO[org.apache.mahout.cf.taste.impl.eval.StatsCallable:55] - Average time per recommendation: 0ms
+2017-11-07 15:49:37,560 INFO[org.apache.mahout.cf.taste.impl.eval.StatsCallable:58] - Approximate memory used: 16MB / 96MB
+2017-11-07 15:49:37,560 INFO[org.apache.mahout.cf.taste.impl.eval.StatsCallable:59] - Unable to recommend in 0 cases
+2017-11-07 15:49:37,560 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:128] - Evaluation result: 0.0
+2017-11-07 15:51:22,236 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:187] - Creating FileDataModel for file E:\IntelliJWorkspaceMumu\mumu-mahout\target\classes\datafile\item.csv
+2017-11-07 15:51:22,295 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:358] - Reading file info...
+2017-11-07 15:51:22,295 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:369] - Read lines: 21
+2017-11-07 15:51:22,318 INFO[org.apache.mahout.cf.taste.impl.model.GenericDataModel:113] - Processed 5 users
+2017-11-07 15:51:22,330 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:106] - Beginning evaluation using 0.7 of FileDataModel[dataFile:E:\IntelliJWorkspaceMumu\mumu-mahout\target\classes\datafile\item.csv]
+2017-11-07 15:51:22,331 INFO[org.apache.mahout.cf.taste.impl.model.GenericDataModel:113] - Processed 5 users
+2017-11-07 15:51:22,335 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:182] - Beginning evaluation of 4 users
+2017-11-07 15:51:22,335 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:195] - Starting timing of 4 tasks in 4 threads
+2017-11-07 15:51:22,335 INFO[org.apache.mahout.cf.taste.impl.eval.StatsCallable:55] - Average time per recommendation: 0ms
+2017-11-07 15:51:22,335 INFO[org.apache.mahout.cf.taste.impl.eval.StatsCallable:58] - Approximate memory used: 14MB / 96MB
+2017-11-07 15:51:22,335 INFO[org.apache.mahout.cf.taste.impl.eval.StatsCallable:59] - Unable to recommend in 5 cases
+2017-11-07 15:51:22,350 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:128] - Evaluation result: NaN
+2017-11-07 16:03:22,385 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:187] - Creating FileDataModel for file E:\IntelliJWorkspaceMumu\mumu-mahout\target\classes\datafile\item.csv
+2017-11-07 16:03:22,432 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:358] - Reading file info...
+2017-11-07 16:03:22,432 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:369] - Read lines: 21
+2017-11-07 16:03:22,448 INFO[org.apache.mahout.cf.taste.impl.model.GenericDataModel:113] - Processed 5 users
+2017-11-07 16:03:22,463 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:106] - Beginning evaluation using 0.7 of FileDataModel[dataFile:E:\IntelliJWorkspaceMumu\mumu-mahout\target\classes\datafile\item.csv]
+2017-11-07 16:03:22,463 INFO[org.apache.mahout.cf.taste.impl.model.GenericDataModel:113] - Processed 5 users
+2017-11-07 16:03:22,463 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:182] - Beginning evaluation of 3 users
+2017-11-07 16:03:22,479 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:195] - Starting timing of 3 tasks in 4 threads
+2017-11-07 16:03:22,479 INFO[org.apache.mahout.cf.taste.impl.eval.StatsCallable:55] - Average time per recommendation: 0ms
+2017-11-07 16:03:22,479 INFO[org.apache.mahout.cf.taste.impl.eval.StatsCallable:58] - Approximate memory used: 16MB / 96MB
+2017-11-07 16:03:22,479 INFO[org.apache.mahout.cf.taste.impl.eval.StatsCallable:59] - Unable to recommend in 4 cases
+2017-11-07 16:03:22,479 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:128] - Evaluation result: NaN
+2017-11-07 16:04:22,246 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:187] - Creating FileDataModel for file E:\IntelliJWorkspaceMumu\mumu-mahout\target\classes\datafile\evaluation.csv
+2017-11-07 16:04:22,277 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:358] - Reading file info...
+2017-11-07 16:04:22,293 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:369] - Read lines: 6
+2017-11-07 16:04:22,293 INFO[org.apache.mahout.cf.taste.impl.model.GenericDataModel:113] - Processed 1 users
+2017-11-07 16:04:22,309 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:106] - Beginning evaluation using 0.7 of FileDataModel[dataFile:E:\IntelliJWorkspaceMumu\mumu-mahout\target\classes\datafile\evaluation.csv]
+2017-11-07 16:04:22,309 INFO[org.apache.mahout.cf.taste.impl.model.GenericDataModel:113] - Processed 1 users
+2017-11-07 16:04:22,324 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:182] - Beginning evaluation of 1 users
+2017-11-07 16:04:22,324 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:195] - Starting timing of 1 tasks in 4 threads
+2017-11-07 16:04:22,324 INFO[org.apache.mahout.cf.taste.impl.eval.StatsCallable:55] - Average time per recommendation: 0ms
+2017-11-07 16:04:22,324 INFO[org.apache.mahout.cf.taste.impl.eval.StatsCallable:58] - Approximate memory used: 15MB / 96MB
+2017-11-07 16:04:22,324 INFO[org.apache.mahout.cf.taste.impl.eval.StatsCallable:59] - Unable to recommend in 2 cases
+2017-11-07 16:04:22,324 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:128] - Evaluation result: NaN
+2017-11-07 16:23:45,976 INFO[org.apache.mahout.cf.taste.impl.model.GenericDataModel:113] - Processed 1 users
+2017-11-07 16:42:35,617 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:187] - Creating FileDataModel for file E:\IntelliJWorkspaceMumu\mumu-mahout\target\classes\datafile\evaluation.csv
+2017-11-07 16:42:35,664 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:358] - Reading file info...
+2017-11-07 16:42:35,665 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:369] - Read lines: 6
+2017-11-07 16:42:35,673 INFO[org.apache.mahout.cf.taste.impl.model.GenericDataModel:113] - Processed 1 users
+2017-11-07 16:42:35,689 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:106] - Beginning evaluation using 0.7 of FileDataModel[dataFile:E:\IntelliJWorkspaceMumu\mumu-mahout\target\classes\datafile\evaluation.csv]
+2017-11-07 16:42:35,689 INFO[org.apache.mahout.cf.taste.impl.model.GenericDataModel:113] - Processed 1 users
+2017-11-07 16:42:35,689 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:182] - Beginning evaluation of 1 users
+2017-11-07 16:42:35,689 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:195] - Starting timing of 1 tasks in 4 threads
+2017-11-07 16:42:35,705 INFO[org.apache.mahout.cf.taste.impl.eval.StatsCallable:55] - Average time per recommendation: 16ms
+2017-11-07 16:42:35,705 INFO[org.apache.mahout.cf.taste.impl.eval.StatsCallable:58] - Approximate memory used: 15MB / 96MB
+2017-11-07 16:42:35,705 INFO[org.apache.mahout.cf.taste.impl.eval.StatsCallable:59] - Unable to recommend in 3 cases
+2017-11-07 16:42:35,705 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:128] - Evaluation result: NaN
+2017-11-07 16:43:29,029 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:187] - Creating FileDataModel for file E:\IntelliJWorkspaceMumu\mumu-mahout\target\classes\datafile\evaluation.csv
+2017-11-07 16:43:29,076 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:358] - Reading file info...
+2017-11-07 16:43:29,076 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:369] - Read lines: 6
+2017-11-07 16:43:29,092 INFO[org.apache.mahout.cf.taste.impl.model.GenericDataModel:113] - Processed 1 users
+2017-11-07 16:43:29,107 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:106] - Beginning evaluation using 0.7 of FileDataModel[dataFile:E:\IntelliJWorkspaceMumu\mumu-mahout\target\classes\datafile\evaluation.csv]
+2017-11-07 16:43:29,107 INFO[org.apache.mahout.cf.taste.impl.model.GenericDataModel:113] - Processed 1 users
+2017-11-07 16:43:29,107 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:182] - Beginning evaluation of 0 users
+2017-11-07 16:43:29,107 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:195] - Starting timing of 0 tasks in 4 threads
+2017-11-07 16:43:29,107 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:128] - Evaluation result: NaN
+2017-11-07 16:44:20,267 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:187] - Creating FileDataModel for file E:\IntelliJWorkspaceMumu\mumu-mahout\target\classes\datafile\evaluation.csv
+2017-11-07 16:44:20,298 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:358] - Reading file info...
+2017-11-07 16:44:20,298 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:369] - Read lines: 6
+2017-11-07 16:44:20,314 INFO[org.apache.mahout.cf.taste.impl.model.GenericDataModel:113] - Processed 1 users
+2017-11-07 16:44:20,329 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:106] - Beginning evaluation using 0.7 of FileDataModel[dataFile:E:\IntelliJWorkspaceMumu\mumu-mahout\target\classes\datafile\evaluation.csv]
+2017-11-07 16:44:20,329 INFO[org.apache.mahout.cf.taste.impl.model.GenericDataModel:113] - Processed 1 users
+2017-11-07 16:44:20,329 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:182] - Beginning evaluation of 1 users
+2017-11-07 16:44:20,345 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:195] - Starting timing of 1 tasks in 4 threads
+2017-11-07 16:44:20,345 INFO[org.apache.mahout.cf.taste.impl.eval.StatsCallable:55] - Average time per recommendation: 0ms
+2017-11-07 16:44:20,345 INFO[org.apache.mahout.cf.taste.impl.eval.StatsCallable:58] - Approximate memory used: 15MB / 96MB
+2017-11-07 16:44:20,345 INFO[org.apache.mahout.cf.taste.impl.eval.StatsCallable:59] - Unable to recommend in 3 cases
+2017-11-07 16:44:20,345 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:128] - Evaluation result: NaN
+2017-11-07 16:44:49,814 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:187] - Creating FileDataModel for file E:\IntelliJWorkspaceMumu\mumu-mahout\target\classes\datafile\evaluation.csv
+2017-11-07 16:44:49,861 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:358] - Reading file info...
+2017-11-07 16:44:49,861 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:369] - Read lines: 6
+2017-11-07 16:44:49,877 INFO[org.apache.mahout.cf.taste.impl.model.GenericDataModel:113] - Processed 1 users
+2017-11-07 16:44:49,892 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:106] - Beginning evaluation using 1.0 of FileDataModel[dataFile:E:\IntelliJWorkspaceMumu\mumu-mahout\target\classes\datafile\evaluation.csv]
+2017-11-07 16:44:49,892 INFO[org.apache.mahout.cf.taste.impl.model.GenericDataModel:113] - Processed 1 users
+2017-11-07 16:44:49,892 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:182] - Beginning evaluation of 0 users
+2017-11-07 16:44:49,892 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:195] - Starting timing of 0 tasks in 4 threads
+2017-11-07 16:44:49,892 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:128] - Evaluation result: NaN
+2017-11-07 16:44:54,467 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:187] - Creating FileDataModel for file E:\IntelliJWorkspaceMumu\mumu-mahout\target\classes\datafile\evaluation.csv
+2017-11-07 16:44:54,513 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:358] - Reading file info...
+2017-11-07 16:44:54,513 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:369] - Read lines: 6
+2017-11-07 16:44:54,529 INFO[org.apache.mahout.cf.taste.impl.model.GenericDataModel:113] - Processed 1 users
+2017-11-07 16:44:54,529 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:106] - Beginning evaluation using 1.0 of FileDataModel[dataFile:E:\IntelliJWorkspaceMumu\mumu-mahout\target\classes\datafile\evaluation.csv]
+2017-11-07 16:44:54,529 INFO[org.apache.mahout.cf.taste.impl.model.GenericDataModel:113] - Processed 1 users
+2017-11-07 16:44:54,545 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:182] - Beginning evaluation of 0 users
+2017-11-07 16:44:54,545 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:195] - Starting timing of 0 tasks in 4 threads
+2017-11-07 16:44:54,545 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:128] - Evaluation result: NaN
+2017-11-07 16:45:06,644 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:187] - Creating FileDataModel for file E:\IntelliJWorkspaceMumu\mumu-mahout\target\classes\datafile\evaluation.csv
+2017-11-07 16:45:06,661 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:358] - Reading file info...
+2017-11-07 16:45:06,676 INFO[org.apache.mahout.cf.taste.impl.model.file.FileDataModel:369] - Read lines: 6
+2017-11-07 16:45:06,676 INFO[org.apache.mahout.cf.taste.impl.model.GenericDataModel:113] - Processed 1 users
+2017-11-07 16:45:06,692 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:106] - Beginning evaluation using 0.6 of FileDataModel[dataFile:E:\IntelliJWorkspaceMumu\mumu-mahout\target\classes\datafile\evaluation.csv]
+2017-11-07 16:45:06,692 INFO[org.apache.mahout.cf.taste.impl.model.GenericDataModel:113] - Processed 1 users
+2017-11-07 16:45:06,708 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:182] - Beginning evaluation of 1 users
+2017-11-07 16:45:06,708 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:195] - Starting timing of 1 tasks in 4 threads
+2017-11-07 16:45:06,708 INFO[org.apache.mahout.cf.taste.impl.eval.StatsCallable:55] - Average time per recommendation: 0ms
+2017-11-07 16:45:06,708 INFO[org.apache.mahout.cf.taste.impl.eval.StatsCallable:58] - Approximate memory used: 15MB / 96MB
+2017-11-07 16:45:06,708 INFO[org.apache.mahout.cf.taste.impl.eval.StatsCallable:59] - Unable to recommend in 3 cases
+2017-11-07 16:45:06,708 INFO[org.apache.mahout.cf.taste.impl.eval.AbstractDifferenceRecommenderEvaluator:128] - Evaluation result: NaN
