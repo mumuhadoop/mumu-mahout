@@ -7,6 +7,7 @@ import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.hdfs.DistributedFileSystem;
 import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.SequenceFile;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat;
@@ -79,7 +80,7 @@ public class WikiDriver {
         FileInputFormat.addInputPath(job1, new Path(input));
         FileOutputFormat.setOutputPath(job1, new Path(tempOutput));
         job1.waitForCompletion(true);
-        display(tempOutput);
+        display(tempOutput, "SequenceFile");
 
         Configuration job2Conf = new Configuration();
         Job job2 = new Job(job2Conf, "job2");
@@ -98,21 +99,36 @@ public class WikiDriver {
         FileInputFormat.addInputPath(job2, new Path(tempOutput));
         FileOutputFormat.setOutputPath(job2, new Path(output));
         job2.waitForCompletion(true);
-        display(output);
+        display(output, null);
     }
 
-    public static void display(String path) throws URISyntaxException, IOException {
+    public static void display(String path, String fileType) throws URISyntaxException, IOException {
         DistributedFileSystem distributedFileSystem = new DistributedFileSystem();
-        distributedFileSystem.initialize(new URI("hdfs://192.168.11.25:9000"), new Configuration());
+        Configuration configuration = new Configuration();
+        distributedFileSystem.initialize(new URI("hdfs://192.168.11.25:9000"), configuration);
         FileStatus[] fileStatuses = distributedFileSystem.listStatus(new Path(path));
         for (FileStatus fileStatus : fileStatuses) {
             System.out.println("\n");
             System.out.println(fileStatus);
             if (fileStatus.isFile()) {
-                FSDataInputStream fsDataInputStream = distributedFileSystem.open(fileStatus.getPath());
-                byte[] bytes = new byte[fsDataInputStream.available()];
-                fsDataInputStream.read(bytes);
-                System.out.println(new String(bytes));
+                if (fileStatus.getLen() == 0) {
+                    continue;
+                }
+                if ("SequenceFile".equalsIgnoreCase(fileType)) {
+                    SequenceFile.Reader reader = new SequenceFile.Reader(distributedFileSystem, fileStatus.getPath(), configuration);
+                    VarLongWritable varLongWritable = new VarLongWritable();
+                    VectorWritable vectorWritable = new VectorWritable();
+                    while (reader.next(varLongWritable, vectorWritable)) {
+                        System.out.println(varLongWritable.get() + "\t" + vectorWritable.get());
+                    }
+                    reader.close();
+                } else {
+                    FSDataInputStream fsDataInputStream = distributedFileSystem.open(fileStatus.getPath());
+                    byte[] bytes = new byte[fsDataInputStream.available()];
+                    fsDataInputStream.read(bytes);
+                    System.out.println(new String(bytes));
+                    fsDataInputStream.close();
+                }
             }
         }
     }

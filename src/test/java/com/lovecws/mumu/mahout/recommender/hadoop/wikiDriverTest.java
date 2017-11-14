@@ -1,5 +1,6 @@
 package com.lovecws.mumu.mahout.recommender.hadoop;
 
+import com.lovecws.mumu.mahout.MahoutConfiguration;
 import org.apache.commons.lang3.time.DateFormatUtils;
 import org.junit.Test;
 
@@ -18,8 +19,8 @@ public class wikiDriverTest {
     @Test
     public void wikiDriver() throws IOException, InterruptedException, ClassNotFoundException, URISyntaxException {
         String prefix = DateFormatUtils.format(new Date(), "yyyyMMddHHmmss");
-        WikiDriver.main(new String[]{"hdfs://192.168.11.25:9000/mumu/mahout/wiki/input",
-                "hdfs://192.168.11.25:9000/mumu/mahout/wiki/temp/" + prefix,
-                "hdfs://192.168.11.25:9000/mumu/mahout/wiki/output/" + prefix});
+        WikiDriver.main(new String[]{MahoutConfiguration.HADOOP_ADDRESS+"/mumu/mahout/recommender/wiki/input",
+                MahoutConfiguration.HADOOP_ADDRESS+"/mumu/mahout/recommender/wiki/temp/" + prefix,
+                MahoutConfiguration.HADOOP_ADDRESS+"/mumu/mahout/recommender/wiki/output/" + prefix});
     }
 }

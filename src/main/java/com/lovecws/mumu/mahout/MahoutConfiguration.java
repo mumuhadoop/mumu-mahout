@@ -28,6 +28,8 @@ import java.util.List;
  */
 public class MahoutConfiguration {
 
+    public static final String HADOOP_ADDRESS="hdfs://192.168.11.25:9000";
+
     public void recommend() throws TasteException, IOException {
         DataModel model = new FileDataModel(new File(MahoutConfiguration.class.getResource("/datafile/intro.csv").getPath()));//加载数据文件
         UserSimilarity similarity = new PearsonCorrelationSimilarity(model);  //建立推荐模型
