@@ -38,6 +38,6 @@ public class UserBasedRecommenderTest {
 
     @Test
     public void thresholdUser() throws IOException, TasteException {
-        userBasedRecommender.recommender("/grouplens/ratings.csv", "euclideanDistance", "thresholdUser", 0.7, 3);
+        userBasedRecommender.recommender("/grouplens/ratings.csv", "euclideanDistance", "nearestNUser", 5, 5);
     }
 }

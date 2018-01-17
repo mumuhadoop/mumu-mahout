@@ -7,6 +7,7 @@ import org.apache.mahout.cf.taste.impl.common.LongPrimitiveIterator;
 import org.apache.mahout.cf.taste.impl.eval.AverageAbsoluteDifferenceRecommenderEvaluator;
 import org.apache.mahout.cf.taste.impl.model.file.FileDataModel;
 import org.apache.mahout.cf.taste.impl.neighborhood.NearestNUserNeighborhood;
+import org.apache.mahout.cf.taste.impl.neighborhood.ThresholdUserNeighborhood;
 import org.apache.mahout.cf.taste.impl.recommender.GenericUserBasedRecommender;
 import org.apache.mahout.cf.taste.impl.similarity.PearsonCorrelationSimilarity;
 import org.apache.mahout.cf.taste.model.DataModel;
@@ -28,21 +29,37 @@ import java.util.List;
  */
 public class MahoutConfiguration {
 
-    public static final String HADOOP_ADDRESS="hdfs://192.168.11.25:9000";
+    public static final String HADOOP_ADDRESS = "hdfs://192.168.11.25:9000";
 
     public void recommend() throws TasteException, IOException {
         DataModel model = new FileDataModel(new File(MahoutConfiguration.class.getResource("/datafile/intro.csv").getPath()));//加载数据文件
         UserSimilarity similarity = new PearsonCorrelationSimilarity(model);  //建立推荐模型
-        UserNeighborhood neighborhood = new NearestNUserNeighborhood(2, similarity, model);
+        UserNeighborhood neighborhood = new NearestNUserNeighborhood(5, similarity, model);
         Recommender recommender = new GenericUserBasedRecommender(model, neighborhood, similarity);
-        
+
         LongPrimitiveIterator iter = model.getUserIDs();
         while (iter.hasNext()) {
             long uid = iter.nextLong();
-            List<RecommendedItem> list = recommender.recommend(uid, 2);
+            List<RecommendedItem> list = recommender.recommend(uid, 5);
             System.out.printf("uid:%s", uid);
             for (RecommendedItem recommendedItem : list) {
                 System.out.printf("(%s,%f)", recommendedItem.getItemID(), recommendedItem.getValue());
+            }
+        }
+    }
+
+    public void userNeighborhood() throws IOException, TasteException {
+        DataModel model = new FileDataModel(new File(MahoutConfiguration.class.getResource("/datafile/intro.csv").getPath()));//加载数据文件
+        UserSimilarity similarity = new PearsonCorrelationSimilarity(model);  //建立推荐模型
+        UserNeighborhood neighborhood = new NearestNUserNeighborhood(5, similarity, model);
+        LongPrimitiveIterator iter = model.getUserIDs();
+        while (iter.hasNext()) {
+            long uid = iter.nextLong();
+            long[] userNeighborhoods = neighborhood.getUserNeighborhood(uid);
+            System.out.printf("uid:%s", uid);
+            for (long userNeighborhood : userNeighborhoods) {
+                double userSimilarity = similarity.userSimilarity(uid, userNeighborhood);
+                System.out.printf("(%s,%f)", userNeighborhood, userSimilarity);
             }
             System.out.println();
         }
@@ -64,10 +81,5 @@ public class MahoutConfiguration {
 
         double score = evalutor.evaluate(builder, null, model, 0.9, 1);
         System.out.println(score);
-    }
-
-    public static void main(String[] args) throws IOException, TasteException {
-        new MahoutConfiguration().recommend();
-        new MahoutConfiguration().evalute();
     }
 }
