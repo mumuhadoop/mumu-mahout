@@ -1,4 +1,4 @@
-package com.lovecws.mumu.mahout.recommender;
+package com.lovecws.mumu.mahout.recommender.itembased;
 
 import org.apache.mahout.cf.taste.common.TasteException;
 import org.junit.Test;
@@ -19,37 +19,37 @@ public class ItemBasedRecommenderTest {
 
     @Test
     public void euclideanDistance() throws IOException, TasteException {
-        //itemBasedRecommender.recommender(ItemBasedRecommenderTest.class.getResource("/datafile/item.csv").getPath(), null);
+        //itemBasedRecommender.recommender(ItemBasedRecommenderTest.class.getResource("/datafile/itembased.csv").getPath(), null);
         itemBasedRecommender.recommender(datafile, "euclideanDistance", "itemBased");
     }
 
     @Test
     public void pearson() throws IOException, TasteException {
-        //itemBasedRecommender.recommender(ItemBasedRecommenderTest.class.getResource("/datafile/item.csv").getPath(), null);
+        //itemBasedRecommender.recommender(ItemBasedRecommenderTest.class.getResource("/datafile/itembased.csv").getPath(), null);
         itemBasedRecommender.recommender(datafile, "pearson", "itemBased");
     }
 
     @Test
     public void uncenteredCosine() throws IOException, TasteException {
-        //itemBasedRecommender.recommender(ItemBasedRecommenderTest.class.getResource("/datafile/item.csv").getPath(), null);
+        //itemBasedRecommender.recommender(ItemBasedRecommenderTest.class.getResource("/datafile/itembased.csv").getPath(), null);
         itemBasedRecommender.recommender(datafile, "uncenteredCosine", "itemBased");
     }
 
     @Test
     public void logLikelihood() throws IOException, TasteException {
-        //itemBasedRecommender.recommender(ItemBasedRecommenderTest.class.getResource("/datafile/item.csv").getPath(), null);
+        //itemBasedRecommender.recommender(ItemBasedRecommenderTest.class.getResource("/datafile/itembased.csv").getPath(), null);
         itemBasedRecommender.recommender(datafile, "logLikelihood", "booleanPrefItem");
     }
 
     @Test
     public void tanimotoCoefficient() throws IOException, TasteException {
-        //itemBasedRecommender.recommender(ItemBasedRecommenderTest.class.getResource("/datafile/item.csv").getPath(), null);
+        //itemBasedRecommender.recommender(ItemBasedRecommenderTest.class.getResource("/datafile/itembased.csv").getPath(), null);
         itemBasedRecommender.recommender(datafile, "tanimotoCoefficient", "booleanPrefItem");
     }
 
     @Test
     public void cachingItem() throws IOException, TasteException {
-        //itemBasedRecommender.recommender(ItemBasedRecommenderTest.class.getResource("/datafile/item.csv").getPath(), null);
+        //itemBasedRecommender.recommender(ItemBasedRecommenderTest.class.getResource("/datafile/itembased.csv").getPath(), null);
         itemBasedRecommender.recommender(datafile, "cachingItem", "itemBased");
     }
 }

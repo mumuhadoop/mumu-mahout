@@ -1,5 +1,7 @@
-package com.lovecws.mumu.mahout.recommender;
+package com.lovecws.mumu.mahout.recommender.userbased;
 
+import com.lovecws.mumu.mahout.recommender.itembased.ItemBasedRecommenderTest;
+import com.lovecws.mumu.mahout.recommender.userbased.UserRecommendEvaluation;
 import org.apache.mahout.cf.taste.common.TasteException;
 import org.junit.Test;
 

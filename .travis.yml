@@ -4,8 +4,7 @@ os: linux
 
 env:
   global:
-    - STORM_MASTER=local[2]
-
+    - HADOOP_ADDRESS=hdfs://192.168.11.25:9000
 
 sudo: required
 

@@ -24,8 +24,6 @@
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:1.7.5" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.33" level="project" />
     <orderEntry type="library" name="Maven: org.apache.mahout:mahout-core:0.9.0.2.1.7.0-784" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.mahout:mahout-math:0.9.0.2.1.7.0-784" level="project" />
-    <orderEntry type="library" name="Maven: com.google.guava:guava:15.0" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.12" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.12" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.1" level="project" />
@@ -36,6 +34,8 @@
     <orderEntry type="library" name="Maven: org.apache.lucene:lucene-analyzers-common:4.6.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.mahout.commons:commons-cli:2.0-mahout" level="project" />
     <orderEntry type="library" name="Maven: org.apache.solr:solr-commons-csv:3.5.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.mahout:mahout-math:0.9.0.2.1.7.0-784" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:15.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-client:2.8.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-common:2.8.1" level="project" />
     <orderEntry type="library" name="Maven: commons-cli:commons-cli:1.2" level="project" />

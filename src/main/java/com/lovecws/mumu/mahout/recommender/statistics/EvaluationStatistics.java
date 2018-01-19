@@ -10,7 +10,7 @@ import com.alibaba.fastjson.JSON;
  */
 public class EvaluationStatistics {
 
-    private String recommenderType;//推荐类型 user、item
+    private String recommenderType;//推荐类型 user、itembased
 
     private String datafile;//测试数据地址
     private String similarity;//相似度

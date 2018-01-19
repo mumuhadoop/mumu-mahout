@@ -1,5 +1,6 @@
-package com.lovecws.mumu.mahout.recommender;
+package com.lovecws.mumu.mahout.recommender.userbased;
 
+import com.lovecws.mumu.mahout.recommender.userbased.UserBasedRecommender;
 import org.apache.mahout.cf.taste.common.TasteException;
 import org.junit.Test;
 
@@ -17,7 +18,7 @@ public class UserBasedRecommenderTest {
 
     @Test
     public void euclideanDistanceSimilarity() throws IOException, TasteException {
-        //userBasedRecommender.recommender("/datafile/item.csv", "euclideanDistance", null, 2, 3);
+        //userBasedRecommender.recommender("/datafile/itembased.csv", "euclideanDistance", null, 2, 3);
         userBasedRecommender.recommender("/grouplens/ratings.csv", "euclideanDistance", null, 2, 3);
     }
 

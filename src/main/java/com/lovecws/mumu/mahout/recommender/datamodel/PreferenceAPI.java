@@ -1,4 +1,4 @@
-package com.lovecws.mumu.mahout.recommender;
+package com.lovecws.mumu.mahout.recommender.datamodel;
 
 import org.apache.mahout.cf.taste.common.TasteException;
 import org.apache.mahout.cf.taste.impl.common.FastByIDMap;
@@ -10,6 +10,7 @@ import org.apache.mahout.cf.taste.impl.model.GenericDataModel;
 import org.apache.mahout.cf.taste.impl.model.GenericItemPreferenceArray;
 import org.apache.mahout.cf.taste.impl.model.GenericUserPreferenceArray;
 import org.apache.mahout.cf.taste.impl.neighborhood.NearestNUserNeighborhood;
+import org.apache.mahout.cf.taste.impl.recommender.GenericBooleanPrefUserBasedRecommender;
 import org.apache.mahout.cf.taste.impl.recommender.GenericItemBasedRecommender;
 import org.apache.mahout.cf.taste.impl.recommender.GenericUserBasedRecommender;
 import org.apache.mahout.cf.taste.impl.similarity.EuclideanDistanceSimilarity;
@@ -140,7 +141,7 @@ public class PreferenceAPI {
         UserSimilarity userSimilarity = new LogLikelihoodSimilarity(genericBooleanPrefDataModel);
 
         UserNeighborhood userNeighborhood = new NearestNUserNeighborhood(2, userSimilarity, genericBooleanPrefDataModel);
-        Recommender recommender = new GenericUserBasedRecommender(genericBooleanPrefDataModel, userNeighborhood, userSimilarity);
+        Recommender recommender = new GenericBooleanPrefUserBasedRecommender(genericBooleanPrefDataModel, userNeighborhood, userSimilarity);
         LongPrimitiveArrayIterator userIDs = genericBooleanPrefDataModel.getUserIDs();
         while (userIDs.hasNext()) {
             Long userId = userIDs.next();

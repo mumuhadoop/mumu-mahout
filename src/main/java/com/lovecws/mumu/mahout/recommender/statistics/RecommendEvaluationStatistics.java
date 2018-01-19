@@ -1,7 +1,7 @@
 package com.lovecws.mumu.mahout.recommender.statistics;
 
-import com.lovecws.mumu.mahout.recommender.ItemRecommendEvaluation;
-import com.lovecws.mumu.mahout.recommender.UserRecommendEvaluation;
+import com.lovecws.mumu.mahout.recommender.itembased.ItemRecommendEvaluation;
+import com.lovecws.mumu.mahout.recommender.userbased.UserRecommendEvaluation;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.mahout.cf.taste.common.TasteException;
 
@@ -49,7 +49,7 @@ public class RecommendEvaluationStatistics {
                 long start = System.currentTimeMillis();
                 if ("user".equalsIgnoreCase(recommenderType)) {
                     evalute = userRecommendEvaluation.evalute(datafile, similarity, neighborhood, neighborhoodCount, recommender, evaluator, trainingPercentage, evaluationPercentage);
-                } else if ("item".equalsIgnoreCase(recommenderType)) {
+                } else if ("itembased".equalsIgnoreCase(recommenderType)) {
                     evalute = itemRecommendEvaluation.evaluate(datafile, similarity, recommender, evaluator, trainingPercentage, evaluationPercentage);
                 }
                 long end = System.currentTimeMillis();

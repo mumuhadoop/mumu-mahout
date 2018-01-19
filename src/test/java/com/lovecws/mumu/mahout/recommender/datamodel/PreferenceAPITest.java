@@ -1,5 +1,6 @@
-package com.lovecws.mumu.mahout.recommender;
+package com.lovecws.mumu.mahout.recommender.datamodel;
 
+import com.lovecws.mumu.mahout.recommender.datamodel.PreferenceAPI;
 import org.apache.mahout.cf.taste.common.TasteException;
 import org.junit.Test;
 

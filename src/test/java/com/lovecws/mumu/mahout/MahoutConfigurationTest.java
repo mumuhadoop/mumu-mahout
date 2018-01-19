@@ -1,9 +1,6 @@
 package com.lovecws.mumu.mahout;
 
-import org.apache.mahout.cf.taste.common.TasteException;
 import org.junit.Test;
-
-import java.io.IOException;
 
 /**
  * @author babymm
@@ -14,17 +11,7 @@ import java.io.IOException;
 public class MahoutConfigurationTest {
 
     @Test
-    public void recommend() throws IOException, TasteException {
-        new MahoutConfiguration().recommend();
-    }
-
-    @Test
-    public void userNeighborhood() throws IOException, TasteException {
-        new MahoutConfiguration().userNeighborhood();
-    }
-
-    @Test
-    public void evalute() throws IOException, TasteException {
-        new MahoutConfiguration().evalute();
+    public void address() {
+        System.out.println(MahoutConfiguration.address());
     }
 }
