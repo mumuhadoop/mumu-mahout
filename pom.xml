@@ -13,7 +13,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <nexus.url>192.168.11.25:8081</nexus.url>
-        <mahout.version>0.9.0.2.1.7.0-784</mahout.version>
+        <mahout.version>0.9</mahout.version>
         <hadoop.version>2.8.1</hadoop.version>
     </properties>
 
